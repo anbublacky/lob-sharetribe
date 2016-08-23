@@ -63,7 +63,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
   config.mailer_sender = APP_CONFIG.sharetribe_mail_from_address
-
+  config.secret_key = '165d445ccb2315009d1e3c95eacadc4e06fbd349d93236e61a389711f75b5e0ded4f5d6e3a6000844d5930db78faf4a13fdbf07aa22b09f08a2099922a282967'
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
 

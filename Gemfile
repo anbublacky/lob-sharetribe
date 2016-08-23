@@ -175,13 +175,13 @@ group :test do
   # required for CircleCI automatic test balancing
   gem 'rspec_junit_formatter'
 end
-group :production do
-  # needed for capistrano - delayed job
-  gem 'daemons'
-  # needed for precompiling assets
-  #gem 'therubyracer'
-  gem 'execjs'
-end
+# group :production do
+#   # needed for capistrano - delayed job
+#   gem 'daemons'
+#   # needed for precompiling assets
+#   #gem 'therubyracer'
+#   gem 'execjs'
+# end
 group :development, :test do
   gem 'pry-byebug'
 end
