@@ -187,7 +187,6 @@ GEM
       railties (>= 3, < 5.1)
     cucumber-wire (0.0.1)
     currencies (0.4.2)
-    daemons (1.2.4)
     dalli (2.6.4)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
@@ -576,7 +575,6 @@ DEPENDENCIES
   countries (~> 1.2, >= 1.2.2)
   css_parser (~> 1.4.5)
   cucumber-rails (~> 1.4.0)
-  daemons
   dalli (~> 2.6.4)
   database_cleaner (~> 1.1)
   delayed_job (~> 4.1.1)
@@ -587,7 +585,6 @@ DEPENDENCIES
   devise-encryptable (~> 0.2.0)
   dynamic_form (~> 1.1.4)
   email_spec (~> 1.6.0)
-  execjs
   factory_girl_rails (~> 4.4.1)
   faraday (~> 0.9.1)
   faraday_middleware (~> 0.10.0)
