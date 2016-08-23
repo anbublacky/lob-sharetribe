@@ -150,6 +150,10 @@ group :development do
   gem 'better_errors', "~> 2.1.1"
   gem 'web-console', '~> 2.0'
   gem 'awesome_print', '~> 1.6.1'
+  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-rvm', github: "capistrano/rvm"
 end
 
 group :test do
@@ -171,7 +175,13 @@ group :test do
   # required for CircleCI automatic test balancing
   gem 'rspec_junit_formatter'
 end
-
+group :production do
+  # needed for capistrano - delayed job
+  gem 'daemons'
+  # needed for precompiling assets
+  #gem 'therubyracer'
+  gem 'execjs'
+end
 group :development, :test do
   gem 'pry-byebug'
 end

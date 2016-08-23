@@ -1,4 +1,8 @@
 # The charset_table is really long because we want to allow folding of accented characters¨é ->e, ä->a etc. AND the use of cyrillic letters.
+pid_file: /home/deploy/sharetribe/shared/tmp/pids/searchd.pid
+indices_location: /home/deploy/sharetribe/shared/db/sphinx
+configuration_file: /home/deploy/sharetribe/shared/config/production.sphinx.conf
+binlog_path: /home/deploy/sharetribe/shared/binlog
 
 production:
   version: '2.1.8'
